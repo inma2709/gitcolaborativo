@@ -13,6 +13,8 @@ git add .
 git commit -m "cambios"
 git push 
 
+ahora mismo la rama maria en git debe tener nuestros cambios subidos 
+
 
 
 ahora vamos a intentar fusionar los cambios en una rama comun
