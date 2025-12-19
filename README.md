@@ -1,4 +1,5 @@
 # 🚀 Git Colaborativo - Guía Completa
+# Resumen en GUIA VISUAL 
 
 **Flujo de trabajo: `main` (protegida) ← `develop` (abierta) ← ramas individuales**
 
