@@ -15,7 +15,7 @@ git push
 
 ahora mismo la rama maria en git debe tener nuestros cambios subidos 
 
-
+sin incluir ningun nuevo cambio en nuestra rama fusionamos 
 
 ahora vamos a intentar fusionar los cambios en una rama comun
 nos movemos a la rama destino (develop)
