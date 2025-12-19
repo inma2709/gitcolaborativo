@@ -155,10 +155,10 @@ git checkout main
 # Actualizar main
 git pull origin main
 
-# Fusionar develop
+# Fusionar develop rama origen
 git merge develop
 
-# Subir cambios
+# Subir cambios rama destino 
 git push origin main
 ```
 
