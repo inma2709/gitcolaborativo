@@ -1,4 +1,3 @@
-
 # gitcolaborativo
 Ejercicio de Git colaborativo
 
@@ -25,9 +24,17 @@ Comitea con mensaje
 Empujas a tu rama
         git push
 
+Si da error, hacemos pull denuevo, pero esta vez lo que hace es sincronizar la rama develop por si alguien esta realizando cambios.
+	git pull
+Nuevamente empujamos:
+	git push
+
 Otra forma:
 Nos cambiamos a nuestra rama 
         git checkout JuanMa
 Empujamos los cambios de la rama Origen
         git push origin develop
+Esto sube el merge commit al repositorio remoto.
+
+
 
