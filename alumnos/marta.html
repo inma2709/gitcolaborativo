@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carla · Presentación</title>
+
+    <!-- CSS general del proyecto -->
+    <link rel="stylesheet" href="../alumnos/styles_carla.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Estilo propio de Pedro -->
+    <style>
+      /* =========================
+   PERFIL (header personal)
+   ========================= */
+.perfil {
+  background: linear-gradient(120deg, #3b82f6, #60a5fa);
+  color: white;
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+  text-align: center; /* 🔑 centra todo el texto */
+}
+
+.perfil h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.perfil p {
+  margin-top: 0.4rem;
+  opacity: 0.95;
+}
+
+
+      /* =========================
+         TARJETA PERFIL
+         ========================= */
+      .profile-card {
+        display: grid;
+        gap: 1.6rem;
+        text-align: center;
+       
+      }
+
+      .avatar {
+        width: 96px;
+        height: 96px;
+        margin: auto;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #bfdbfe, #dbeafe);
+        display: grid;
+        place-items: center;
+        font-size: 2.4rem;
+        font-weight: 900;
+        color: #1d4ed8;
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+      }
+    /* Bloque "Sobre mí" (compacto) */
+.sobremi{
+  position: relative;
+  text-align: left;
+  padding: 1.4rem 1.6rem;
+  border-radius: 18px;
+  border: 1.5px solid rgba(59,130,246,.35);
+  background: linear-gradient(180deg, rgba(191,219,254,.35), rgba(255,255,255,.95));
+  box-shadow: 0 12px 24px rgba(59,130,246,.18);
+}
+
+/* 
+  ::before es un PSEUDO-ELEMENTO de CSS.
+  No existe en el HTML: lo crea CSS solo para decorar.
+  Se dibuja ANTES del contenido real del elemento (.sobremi).
+
+  En este caso lo usamos para añadir una estrella decorativa
+  sin escribir ningún <span> ni <div> extra en el HTML.
+
+  👉 Sirve para detalles visuales (iconos, etiquetas, líneas),
+     no para contenido importante.
+*/
+.sobremi::before{
+  content:"✨";        /* Lo que se muestra (obligatorio en ::before) */
+  position:absolute;   /* Lo posicionamos respecto a .sobremi */
+  top:-14px;           /* Ajuste vertical */
+  right:16px;          /* Ajuste horizontal */
+  width:32px;
+  height:32px;
+  border-radius:50%;   /* Forma circular */
+  background:#bfdbfe;
+  display:grid;
+  place-items:center;  /* Centra la estrella */
+  font-size:1rem;
+}
+
+
+/* Ajustes internos */
+.sobremi :is(h2,p){
+  margin:0;
+}
+.sobremi h2{
+  margin-bottom:.6rem;
+  color:#0b1f4d;
+}
+.sobremi p{
+  margin-top:.5rem;
+  color:#1f2933;
+}
+
+
+      /* =========================
+         ENLACES PROFESIONALES (PRO)
+         ========================= */
+      .links {
+        display: grid;
+        gap: 0.85rem;
+        margin-top: 1rem;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .btn-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.9rem;
+
+        padding: 0.9rem 1.05rem;
+        border-radius: 16px;
+        text-decoration: none;
+        font-weight: 750;
+
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(59, 130, 246, 0.25);
+        color: #0b1f4d;
+
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+        transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+      }
+
+      .btn-link:hover {
+        transform: translateY(-2px);
+        border-color: rgba(59, 130, 246, 0.45);
+        box-shadow: 0 14px 26px rgba(0, 0, 0, 0.10);
+      }
+
+      .btn-link:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.25);
+      }
+
+      .btn-link .icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        font-size: 1.2rem;
+        flex: 0 0 auto;
+      }
+
+      .btn-link .text {
+        flex: 1;
+        display: grid;
+        gap: 0.15rem;
+        text-align: left;
+      }
+
+      .btn-link .text strong {
+        font-size: 1rem;
+        line-height: 1.1;
+      }
+
+      .btn-link .text small {
+        color: rgba(31, 41, 51, 0.65);
+        font-weight: 600;
+      }
+
+      .btn-link .arrow {
+        font-size: 1.25rem;
+        color: rgba(29, 78, 216, 0.75);
+        flex: 0 0 auto;
+      }
+
+      /* Variantes de color */
+      .btn-link.cv .icon {
+        background: linear-gradient(135deg, #fde68a, #fef3c7);
+        color: #92400e;
+      }
+
+      .btn-link.git .icon {
+        background: linear-gradient(135deg, #bfdbfe, #dbeafe);
+        color: #1d4ed8;
+      }
+
+      .btn-link.in .icon {
+        background: linear-gradient(135deg, #bbf7d0, #dcfce7);
+        color: #166534;
+      }
+
+      /* =========================
+         VOLVER
+         ========================= */
+      .back-link {
+        display: inline-block;
+        margin-top: 1.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        color: #1d4ed8;
+      }
+      /*FOOTER*/
+      .site-footer {
+        margin-top: 4rem;
+        padding: 1.5rem 0;
+        border-top: 16px solid #2e67da;
+        text-align: center;
+        color: #232425;
+        font-size: 1.275rem;
+        background-color: #ecf1f7;
+      } 
+    </style>
+  </head>
+
+  <body>
+   
+
+    <!-- Header personal -->
+   <!-- Header personal -->
+<header class="perfil">
+  <div class="wrap">
+    <h1>Carla</h1>
+    <p>Estudiante de desarrollo web · UF1846</p>
+  </div>
+</header>
+
+
+    <main id="contenido" class="wrap">
+      <section class="card profile-card">
+        <div class="avatar">CP</div>
+
+        <div class="sobremi">
+          <h2>Sobre mí</h2>
+          <p>
+            ¡Hola! Soy Marta. Estoy formándome como desarrolladora web y este
+            proyecto forma parte de la UF1846 del certificado IFCD0210.
+          </p>
+          <p>
+            Me interesa aprender a trabajar con Git, crear proyectos reales y
+            mejorar mi perfil profesional.
+          </p>
+        </div>
+
+        <div>
+          <h2>Mis enlaces</h2>
+
+          <div class="links">
+            <a class="btn-link cv" href="https://example.com/cv-pedro" target="_blank" rel="noopener noreferrer">
+              <span class="icon">📄</span>
+              <span class="text">
+                <strong>Currículum</strong>
+                <small>Ver CV actualizado</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a class="btn-link git" href="https://github.com/MartaGuisado" target="_blank" rel="noopener noreferrer">
+              <span class="icon">💻</span>
+              <span class="text">
+                <strong>GitHub</strong>
+                <small>Repositorios y proyectos</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a class="btn-link in" href="https://www.linkedin.com/in/marta-guisado-simón-76719727/" target="_blank" rel="noopener noreferrer">
+              <span class="icon">🔗</span>
+              <span class="text">
+                <strong>LinkedIn</strong>
+                <small>Perfil profesional</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <a class="back-link" href="../index.html">← Volver al índice</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <small>Perfil personal · Proyecto colaborativo CON GIT</small>
+      </div>
+    </footer>
+  </body>
+</html>
