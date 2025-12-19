@@ -44,11 +44,25 @@ Nos traemos los cambios de nuestra rama a la rama develop
 Fusionamos los cambios en la rama Develop, de nuestra rama
         git merge JuanMa -m "Nuevos cambios"
 
-Si da error hacemos commit nuevamente y push:
+Si da error hacemos nuevamente add, commit  y push, pero al desde la rama Develop se suben como si fuera la nuestra.
+        git add .
+Comitea con mensaje
+        git commit -m "cambios"
+Empujas a tu rama
+        git push
 
+Si da error, hacemos pull denuevo, pero esta vez lo que hace es sincronizar la rama develop por si alguien esta realizando cambios.
+	git pull
+Nuevamente empujamos:
+	git push
+
+Otra forma:
 Nos cambiamos a nuestra rama 
         git checkout JuanMa
 Empujamos los cambios de la rama Origen
         git push origin develop
+Esto sube el merge commit al repositorio remoto.
+
+
 
 >>>>>>> JuanMa
