@@ -1,8 +1,14 @@
 * {
-    font-family: ;
+    margin: 0;
+    font-family: "montserrat";
+
 }
 
-@font-face {
-    font-family: ;
-    src: url();
+
+.perfil {
+  background: linear-gradient(120deg, #651f71, #6b37af);
+  color: white;
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+  text-align: center; /* 🔑 centra todo el texto */
 }
