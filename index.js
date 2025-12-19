@@ -7,7 +7,7 @@
 // - slug: el nombre "limpio" que usaremos para construir el enlace a su página (pedro.html, ana.html, etc.)
 const students = [
   { name: "Marta", slug: "marta" },
-  { name: "Carla", slug: "ana" },
+  { name: "Carla", slug: "carla" },
   { name: "Jesús", slug: "jesus" },
   { name: "Roberto", slug: "roberto" },
   { name: "Juanma", slug: "juanma" },
