@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Clase · UF1846</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+  
+
+    <!-- HERO / HEADER -->
+    <header class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-badge">UF1846 · IFCD0210</div>
+        <h1>Portfolio Digital de la Clase</h1>
+        <p class="hero-subtitle">
+          Proyecto colaborativo con Git · Cada alumno tiene su página y sus enlaces profesionales.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#alumnos">Ver alumnos</a>
+          <a class="btn btn-ghost" href="#objetivos">Objetivos</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido" class="wrap">
+
+      <!-- BLOQUE UF1846 -->
+      <section class="info-box accent-blue">
+        <h2>📘 Contexto formativo</h2>
+        <p>
+          Este proyecto se encuadra dentro de la
+          <strong>UF1846 – Desarrollo de aplicaciones web distribuidas</strong>
+          del certificado de profesionalidad <strong>IFCD0210</strong>.
+        </p>
+        <p>Aprendizajes trabajados:</p>
+        <ul>
+          <li>Uso profesional de <strong>Git y GitHub</strong></li>
+          <li>Trabajo colaborativo con ramas, PR y merges</li>
+          <li>Estructuración de proyectos web reales</li>
+          <li>Presentación profesional del perfil digital (CV · GitHub · LinkedIn)</li>
+        </ul>
+      </section>
+
+      <!-- ALUMNOS -->
+      <section id="alumnos" class="card">
+        <div class="card-header">
+          <h2>👩‍💻 Alumnos</h2>
+          <div class="search">
+            <label class="sr-only" for="q">Buscar alumno</label>
+            <input id="q" type="search" placeholder="Buscar alumno..." autocomplete="off" />
+          </div>
+        </div>
+
+        <div id="grid" class="portfolio-grid"></div>
+        <p id="empty" class="empty" hidden>No hay resultados.</p>
+      </section>
+
+      <!-- OBJETIVOS -->
+      <section id="objetivos" class="info-box accent-green">
+        <h2>🚀 Objetivos del ejercicio</h2>
+        <p>
+          El objetivo de este ejercicio no es solo crear una web: es aprender a
+          <strong>trabajar como un equipo real</strong>.
+        </p>
+        <p>
+          Cada alumno crea su página personal y contribuye al proyecto mediante Git
+          (ramas, PR, revisiones y merge).
+        </p>
+        <ul>
+          <li>Un portfolio personal enlazado</li>
+          <li>Experiencia real de trabajo colaborativo</li>
+          <li>Un proyecto demostrable para el CV</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <small>Proyecto educativo · UF1846 · IFCD0210</small>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
