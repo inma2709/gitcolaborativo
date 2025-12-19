@@ -114,7 +114,7 @@ git push -u origin tu-nombre
 
 ```bash
 # Cambiar a develop
-git checkout develop
+git checkout develop (comprueba que estas en develop git branch)
 
 # Traer los últimos cambios
 git pull origin develop
@@ -125,6 +125,9 @@ git pull origin develop
 ```bash
 # Fusionar tu rama en develop
 git merge tu-nombre
+Esto significa literalmente:
+
+“Trae los cambios de tu-nombre dentro de develop”
 ```
 
 📝 **Sobre el mensaje de merge**:
@@ -155,7 +158,7 @@ git checkout main
 # Actualizar main
 git pull origin main
 
-# Fusionar develop rama origen
+# Fusionar develop rama origen desde tu propia rama
 git merge develop
 
 # Subir cambios rama destino 
