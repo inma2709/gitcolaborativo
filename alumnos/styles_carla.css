@@ -13,11 +13,50 @@
   text-align: center; /* 🔑 centra todo el texto */
 }
 
+.perfil h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.perfil p {
+  margin-top: 0.4rem;
+  opacity: 0.95;
+}
+
+
 .avatar {
     background: linear-gradient(135deg, #ccccff, #f2dbfe);
     color: #651f71;    
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2.4rem;
+    font-weight: 900;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+
 }
 
-.sobremi {
-    margin: 1rem;
+/* =========================
+    TARJETA PERFIL
+    ========================= */
+.profile-card {
+display: grid;
+gap: 1.6rem;
+text-align: center;
+
+}
+
+          /* Bloque "Sobre mí" (compacto) */
+.sobremi{
+  position: relative;
+  text-align: left;
+  padding: 1.4rem 1.6rem;
+  border-radius: 18px;
+  margin: 1rem;
+  border: 1.5px solid rgba(59,130,246,.35);
+  background: linear-gradient(180deg, rgba(191,219,254,.35), rgba(255,255,255,.95));
+  box-shadow: 0 12px 24px rgba(59,130,246,.18);
 }
