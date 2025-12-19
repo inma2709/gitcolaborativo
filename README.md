@@ -1,2 +1,2 @@
 # gitcolaborativo
-ejericicio de git colaborativo
+Ejercicio de Git colaborativo
