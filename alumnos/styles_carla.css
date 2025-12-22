@@ -4,12 +4,17 @@
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> roberto
 .perfil {
   background: linear-gradient(120deg, #651f71, #6b37af);
   color: white;
   padding: 2.5rem 0;
   margin-bottom: 2rem;
   text-align: center; /* 🔑 centra todo el texto */
+<<<<<<< HEAD
 }
 
 .perfil h1 {
@@ -57,3 +62,6 @@
     background: linear-gradient(180deg, rgba(191,219,254,.35), rgba(255,255,255,.95));
     box-shadow: 0 12px 24px rgba(59,130,246,.18);
     }
+=======
+}
+>>>>>>> roberto
