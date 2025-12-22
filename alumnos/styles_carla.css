@@ -4,12 +4,17 @@
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> roberto
 .perfil {
   background: linear-gradient(120deg, #651f71, #6b37af);
   color: white;
   padding: 2.5rem 0;
   margin-bottom: 2rem;
   text-align: center; /* 🔑 centra todo el texto */
+<<<<<<< HEAD
 }
 
 .perfil h1 {
@@ -53,6 +58,7 @@
     margin: 1rem;
     padding: 1.4rem 1.6rem;
     border-radius: 18px;
+<<<<<<< HEAD
     border: 1.5px solid #651f71;
     background: linear-gradient(180deg, #efccff, rgba(255,255,255,.95));
     box-shadow: 0 12px 24px #651f71(59,130,246,.18);
@@ -209,3 +215,12 @@
         font-size: 1.275rem;
         background-color: #ecf1f7;
       } 
+=======
+    border: 1.5px solid rgba(59,130,246,.35);
+    background: linear-gradient(180deg, rgba(191,219,254,.35), rgba(255,255,255,.95));
+    box-shadow: 0 12px 24px rgba(59,130,246,.18);
+    }
+=======
+}
+>>>>>>> roberto
+>>>>>>> 6297f3e0183e6877fcbfe1b2f6b6eedfaa8c8793

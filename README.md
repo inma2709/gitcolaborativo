@@ -148,35 +148,7 @@ Este paso se hace cuando:
 - ✅ No hay conflictos pendientes
 - ✅ El trabajo está revisado y aprobado
 
-<<<<<<< HEAD
-Si da error hacemos nuevamente add, commit  y push, pero al desde la rama Develop se suben como si fuera la nuestra.
-        git add .
-Comitea con mensaje
-        git commit -m "cambios"
-Empujas a tu rama
-        git push
 
-Si da error, hacemos pull denuevo, pero esta vez lo que hace es sincronizar la rama develop por si alguien esta realizando cambios.
-	git pull
-Nuevamente empujamos:
-	git push
-
-Otra forma:
-Nos cambiamos a nuestra rama 
-        git checkout JuanMa
-Empujamos los cambios de la rama Origen
-        git push origin develop
-Esto sube el merge commit al repositorio remoto.
-
-
-=======
-```bash
-# Cambiar a main
-git checkout main
-
-# Actualizar main
-git pull origin main
->>>>>>> 9a7df4c24f8d06eb29d7096e745eb292cc6f0ffe
 
 # Fusionar develop
 git merge develop
@@ -202,7 +174,7 @@ CONFLICT (content): Merge conflict in archivo.html
 1. **Abrir archivos en conflicto** con tu editor
 2. **Buscar las marcas de conflicto**:
    ```
-   <<<<<<< HEAD
+  
    Tu código actual
    =======
    Código que intentas fusionar
